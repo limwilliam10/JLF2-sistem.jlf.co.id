@@ -1,0 +1,1 @@
+# this is the example of env.example.php file
