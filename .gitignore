@@ -1,0 +1,15 @@
+.env*
+!.env.example
+!env.example.php
+env.php
+*env*.php
+!*environment*.php
+!*env_helper*.php
+!*payment_env*.php
+!*envoy*.php
+!*dotenv*.php
+!*envelop*.php
+!*vendor*.php
+!*validator*.php
+!*view*.php
+!*value*.php

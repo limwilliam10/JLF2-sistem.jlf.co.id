@@ -1,0 +1,5 @@
+/.github/CODEOWNERS			@limwilliam10
+/.github/workflows/*		@limwilliam10
+/.gitignore				      @limwilliam10
+/.env.example					  @limwilliam10
+/env.example.php				@limwilliam10

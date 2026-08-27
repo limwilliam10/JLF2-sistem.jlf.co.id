@@ -1,0 +1,24 @@
+name: Deploy ke UAT
+
+on:
+  push:
+    branches:
+      - uat
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ambil kode terbaru
+        uses: actions/checkout@v7
+
+      - name: Kirim file ke server UAT
+        uses: limwilliam10/actions-scp@main
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.PORT }}
+          source: "."
+          target: "/home/u229481158/domains/uat-sistem.jlf.co.id/core-app"
+          rm: true
